@@ -264,7 +264,7 @@ body {
 
 .section-favorite {
   background-color: #307987;
-  padding: 18vh 0 5vh 0;
+  padding: 10vh 0 5vh 0;
   height: auto; }
   @media only screen and (max-width: 56.25em) {
     .section-favorite {
