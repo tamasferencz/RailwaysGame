@@ -779,7 +779,11 @@ body {
     width: 25%; }
     @media only screen and (max-width: 56.25em) {
       .gallery__column {
-        width: 70vw;
+        width: 65vw;
+        height: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__column {
+        width: 85vw;
         height: auto; } }
   .gallery__link {
     margin: 1vw;
