@@ -1321,6 +1321,10 @@ table th {
     .section-languages {
       height: 90vh;
       padding: 0 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-languages {
+      height: 120vh;
+      padding: 0 0; } }
 
 .section-favorite {
   background-image: linear-gradient(to left, #036767, #00b6b6);
@@ -1333,6 +1337,10 @@ table th {
     .section-favorite {
       padding: 20rem 0 10rem 0;
       height: 210vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-favorite {
+      padding: 20rem 0 10rem 0;
+      height: 310vh; } }
 
 .section-schools {
   position: relative;
@@ -1341,6 +1349,10 @@ table th {
     .section-schools {
       padding: 10rem 0;
       height: 80vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-schools {
+      padding: 10rem 0;
+      height: 120vh; } }
 
 .section-write {
   padding: 15rem 0;

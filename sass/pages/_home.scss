@@ -36,6 +36,11 @@
     height: 90vh;
     padding: 0 0;
   }
+
+  @include respond(phone) {
+    height: 120vh;
+    padding: 0 0;
+  }
 }
 
 .section-favorite {
@@ -51,6 +56,11 @@
     padding: 20rem 0 10rem 0;
     height: 210vh;
   }
+
+  @include respond(phone) {
+    padding: 20rem 0 10rem 0;
+    height: 310vh;
+  }
 }
 
 .section-schools {
@@ -60,6 +70,11 @@
   @include respond(tab-port) {
     padding: 10rem 0;
     height: 80vh;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0;
+    height: 120vh;
   }
 }
 
