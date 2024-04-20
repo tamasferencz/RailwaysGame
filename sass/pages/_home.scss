@@ -37,7 +37,7 @@
   }
 
   @include respond(tab-land) {
-    height: 120vh;
+    height: 150vh;
     padding: 0 0;
   }
 }
@@ -49,6 +49,11 @@
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
     height: auto;
+  }
+
+  @include respond(tab-land) {
+    padding: 20rem 0 10rem 0;
+    height: 100vh;
   }
 }
 
