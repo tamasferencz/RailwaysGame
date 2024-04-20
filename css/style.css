@@ -1322,7 +1322,7 @@ table th {
       padding: 0 0; } }
   @media only screen and (max-width: 75em) {
     .section-languages {
-      height: 150vh;
+      height: 100vh;
       padding: 0 0; } }
 
 .section-favorite {
