@@ -1,0 +1,230 @@
+.composition {
+  display: flex;
+
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.img1 {
+  width: 30rem;
+  height: auto;
+  border: 5px solid $color-primary;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5%;
+
+  &:hover {
+    z-index: 100;
+    transform: scale(1.5);
+    border-radius: 30%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 30rem;
+    height: auto;
+    transform: translate(0rem, 0rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.img2 {
+  width: 30rem;
+  height: auto;
+  transform: translate(-15rem, 15rem);
+  border: 5px solid $color-primary;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5%;
+
+  &:hover {
+    z-index: 100;
+    transform: scale(1.5) translate(-15rem, 7rem);
+    border-radius: 30%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 30rem;
+    height: auto;
+    transform: translate(0rem, 0rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.img3 {
+  width: 30rem;
+  height: auto;
+  transform: translate(-35rem, -5rem);
+  border: 5px solid $color-primary;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5%;
+
+  &:hover {
+    z-index: 100;
+    transform: scale(1.5) translate(-25rem, -2rem);
+    border-radius: 30%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 30rem;
+    height: auto;
+    transform: translate(0rem, 0rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.feature-box {
+  background-color: rgba($color-grey-dark-3, 1);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: $color-white;
+
+  height: 20vh;
+  width: 15vw;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tab-land) {
+    height: 35vh;
+    width: auto;
+    margin: 2rem;
+  }
+  @include respond(tab-port) {
+    height: auto;
+    width: auto;
+    margin: 1rem;
+  }
+
+  @include respond(phone) {
+    height: 10vh;
+    width: auto;
+    margin: 1rem;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary,
+      $color-primary
+    );
+    color: transparent;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}
+
+.row {
+  @media only screen and (max-width: 75em) {
+    height: auto;
+    padding: 5vw;
+  }
+  @include respond(tab-land) {
+    height: auto;
+    width: 100vw;
+    padding: 0;
+  }
+}
+
+details {
+  width: 100vw;
+}
+
+.table-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  font-size: 4rem;
+  width: 100vw;
+  height: auto;
+
+  @include respond(tab-land) {
+    height: 100vh;
+  }
+}
+
+table {
+  border: 1px solid $color-grey-dark;
+  border-collapse: collapse;
+  width: 100vw;
+  height: 65vh;
+  table-layout: fixed;
+}
+
+caption {
+  font-size: 4rem;
+  color: $color-white;
+  padding: 2rem;
+}
+
+table tr {
+  background-color: $color-white;
+  border: 1px solid $color-grey-dark-2;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+table th {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 60em) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+

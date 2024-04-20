@@ -24,10 +24,8 @@ html {
   }
 }
 
-body {
-  @include respond(tab-port) {
-    padding: 0;
-  }
+body{
+  height: 100vh;
 }
 
 ::selection {
