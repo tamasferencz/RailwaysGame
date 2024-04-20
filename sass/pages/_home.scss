@@ -33,7 +33,7 @@
   margin-top: -10rem;
 
   @include respond(tab-land) {
-    height: 120vh;
+    height: 90vh;
     padding: 0 0;
   }
 }
@@ -44,12 +44,12 @@
 
   @include respond(tab-land) {
     padding: 20rem 0 10rem 0;
-    height: 100vh;
+    height: 120vh;
   }
 
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
-    height: 310vh;
+    height: 210vh;
   }
 }
 
