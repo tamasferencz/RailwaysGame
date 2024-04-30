@@ -44,17 +44,3 @@ function backgroundWrite(Element, color) {
   x.style.backgroundColor = color;
 }
 
-function heightAdjust(Element) {
-  let x = document.getElementById(Element);
-  if (x.style.height <= "100vh") {
-    x.style.height = "auto";
-  } else {
-    x.style.height = "100vh";
-  }
-}
-
-function visitedOrNot(Element) {
-  let x = document.getElementById(Element);
-  x.style.color = "black";
-}
-

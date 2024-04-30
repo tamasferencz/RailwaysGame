@@ -24,6 +24,7 @@ body {
 
     @include respond(phone) {
       letter-spacing: 1rem;
+      font-family: 5rem;
     }
   }
 
@@ -87,8 +88,3 @@ body {
     margin-bottom: 3rem;
   }
 }
-
-.bold {
-  font-style: oblique;
-}
-
