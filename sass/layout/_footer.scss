@@ -1,81 +1,56 @@
-.footer {
-  background-color: $color-grey-dark-3;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
-  transform: translateY(-20%);
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  background-color: white;
+}
 
-  @include respond(tab-port) {
-    padding: 8rem 0;
+.icons {
+  padding: 1rem;
+  font-size: 6vh;
+  text-decoration: none;
+  cursor: pointer;
+  color: #307987;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.5);
   }
+}
 
-  &__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 12vh;
+  background-color: white;
+  color: #307987;
+  font-size: $default-font-size;
+  padding-bottom: 2vh;
+}
 
-    @include respond(tab-port) {
-      margin-bottom: 6rem;
-    }
-  }
+.text-format {
+  padding-bottom: 1vh;
+}
 
-  &__logo {
-    width: 40rem;
-    height: 20rem;
-  }
+.text-format-copyright {
+  color: #307987;
+  font-size: 1.2rem;
+}
 
-  &__navigation {
-    border-top: 1px solid $color-primary;
-    padding-top: 2rem;
-    display: inline-block;
+.contact-click {
+  background-color: white;
+  color: #307987;
+  font-size: 3.3vh;
+  padding-top: 2vh;
+  text-align: center;
+}
 
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-  }
-
-  &__link {
-    &:link,
-    &:visited {
-      color: $color-primary;
-      background-color: $color-grey-dark-3;
-      text-decoration: none;
-      text-transform: uppercase;
-      display: inline-block;
-      transition: all 0.2s;
-    }
-
-    &:hover,
-    &:active {
-      color: $color-black;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
-      transform: rotate(5deg) scale(1.3);
-    }
-  }
-
-  &__copyright {
-    border-top: 1px solid $color-primary;
-    padding-top: 2rem;
-    width: 80%;
-    float: right;
-    color: $color-secondary;
-
-    @include respond(tab-port) {
-      width: 100%;
-      float: none;
-    }
-  }
+.indicators {
+  font-size: $default-font-size;
+  display: block;
+  justify-content: space-between;
 }
 
