@@ -1,5 +1,3 @@
-<Ferencz Tamás>
-<G0820E>
 Webprogramozás - RailWays Game
 
 Minimálisan teljesítendő (8 pont)
@@ -27,4 +25,5 @@ Plusz feladatok (5 pont)
 - [ ] Mentés: A játék állapota játék közben elmenthető, az oldal újra megnyitása után visszatölthető a legutóbb mentett állapot (1 pont)
 - [ ] Mentés: A toplisták LocalStorageban elmentődnek, az oldal újratöltése után is elérhetőek (2 pont)
 - [ ] Elemek lehelyezése: pályarajzolás vonalhúzással (egérgombot lenyomva tartva mozogni a cellákon) (2 pont)
+
 
